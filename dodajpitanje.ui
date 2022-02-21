@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dodajpitanje</class>
+ <widget class="QDialog" name="dodajpitanje">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>253</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dodaj pitanje</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../ipi.jpg</normaloff>../ipi.jpg</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>321</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Klasično</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>189</width>
+       <height>85</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="k_lbl_pitanje">
+          <property name="text">
+           <string>Pitanje:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="k_txt_pitanje"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="k_lbl_odgovor">
+          <property name="text">
+           <string>Odgovor:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="k_txt_odgovor"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="k_btn_add">
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="k_btn_cncl">
+          <property name="text">
+           <string>Poništi</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Radio button</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>265</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,0,0,0">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="r_lbl_pitanje">
+        <property name="text">
+         <string>Pitanje:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_pitanje</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="r_txt_pitanje"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="r_lbl_tcn">
+        <property name="text">
+         <string>Tačno:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="r_lbl_chck1">
+        <property name="text">
+         <string>Odgovor 1:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_odg1</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="r_txt_odg1"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="r_chck1">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="r_lbl_chck2">
+        <property name="text">
+         <string>Odgovor 2:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_odg2</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="r_txt_odg2"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QCheckBox" name="r_chck2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="r_lbl_chck3">
+        <property name="text">
+         <string>Odgovor 3:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_odg3</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="r_txt_odg3"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QCheckBox" name="r_chck3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="r_lbl_chck4">
+        <property name="text">
+         <string>Odgovor 4:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_odg4</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="r_txt_odg4"/>
+      </item>
+      <item row="4" column="3">
+       <widget class="QCheckBox" name="r_chck4">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="r_lbl_chck5">
+        <property name="text">
+         <string>Odgovor 5:</string>
+        </property>
+        <property name="buddy">
+         <cstring>r_txt_odg5</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="r_txt_odg5"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="QCheckBox" name="r_chck5">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QPushButton" name="r_btn_add">
+        <property name="text">
+         <string>Dodaj</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="r_btn_cncl">
+        <property name="text">
+         <string>Poništi</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Checkbox</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>21</y>
+       <width>265</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0,0,0">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="c_lbl_pitanje">
+        <property name="text">
+         <string>Pitanje:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="c_txt_pitanje"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="c_lbl_tcn">
+        <property name="text">
+         <string>Tačno:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="c_lbl_chck1">
+        <property name="text">
+         <string>Odgovor 1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="c_txt_odg1"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="c_chck1">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="c_lbl_chck2">
+        <property name="text">
+         <string>Odgovor 2:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="c_txt_odg2"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QCheckBox" name="c_chck2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="c_lbl_chck3">
+        <property name="text">
+         <string>Odgovor 3:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="c_txt_odg3"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QCheckBox" name="c_chck3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="c_lbl_chck4">
+        <property name="text">
+         <string>Odgovor 4:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="c_txt_odg4"/>
+      </item>
+      <item row="4" column="3">
+       <widget class="QCheckBox" name="c_chck4">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="c_lbl_chck5">
+        <property name="text">
+         <string>Odgovor 5:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="c_txt_odg5"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="QCheckBox" name="c_chck5">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QPushButton" name="c_btn_add">
+        <property name="text">
+         <string>Dodaj</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="c_btn_cncl">
+        <property name="text">
+         <string>Poništi</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
